@@ -1,9 +1,9 @@
 Viral_Automata3 <- function(){
   K <- 100
   Get_Parms3 <- function(){
-    G <- as.numeric(readline("Número de filas y columnas: "))
-    N <- as.numeric(readline("Número de individuos: "))
-    M <- as.numeric(readline("Número de movimientos: "))
+    G <- as.numeric(readline("NÃºmero de filas y columnas: "))
+    N <- as.numeric(readline("NÃºmero de individuos: "))
+    M <- as.numeric(readline("NÃºmero de movimientos: "))
     GNM <- c(G,N,M)
     return(GNM)
   }
@@ -76,12 +76,12 @@ Viral_Automata3 <- function(){
   Animate_History <- function(Historia,Parametros,step){
     N <- Parametros[2]
     t=0
-    b <- readline("¿Querés recalcular el modelo un periodo mas? Si/No:  ")
+    b <- readline("Â¿QuerÃ©s recalcular el modelo un periodo mas? Si/No:  ")
     while (t<=K && b=="Si") {
       NuevaH <- Historia[t + 1, 1: (N * 6)]
       PlotPopulation3(Parameters,NuevaH)
       t <- t + step
-      b <- readline("¿Querés recalcular el modelo un periodo mas? Si/No:  ")
+      b <- readline("Â¿QuerÃ©s recalcular el modelo un periodo mas? Si/No:  ")
     }
     
     
