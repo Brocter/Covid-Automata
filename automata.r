@@ -54,6 +54,7 @@ Viral_Automata3 <- function(){
     Nueva_x <- x+DX
     Nueva_y <- y+DY
     
+    
     NewX <- ifelse (Nueva_x <= 0,G+(Nueva_x%%G), ifelse (Nueva_x > G,Nueva_x%%G,Nueva_x))
     NewY <- ifelse (Nueva_y <= 0,G+(Nueva_y%%G), ifelse (Nueva_y > G,Nueva_y%%G,Nueva_y))
     
